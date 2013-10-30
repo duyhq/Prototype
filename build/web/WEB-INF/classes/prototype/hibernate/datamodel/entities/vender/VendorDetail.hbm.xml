@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2013 1:55:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class name="prototype.hibernate.datamodel.entities.vender.VendorDetail" schema="public" table="vendor_detail">
+    <id name="vendorDetailId" type="int">
+      <column name="vendor_detail_id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="vendorId" type="java.lang.Integer">
+      <column name="vendor_id"/>
+    </property>
+    <property name="productId" type="java.lang.Integer">
+      <column name="product_id"/>
+    </property>
+    <property name="productName" type="string">
+      <column length="50" name="product_name"/>
+    </property>
+  </class>
+</hibernate-mapping>

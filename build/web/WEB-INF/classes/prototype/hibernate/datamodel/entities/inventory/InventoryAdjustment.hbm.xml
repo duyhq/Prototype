@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2013 1:55:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="prototype.hibernate.datamodel.entities.InventoryAdjustment" table="inventory_adjustment" schema="public">
+        <id name="adjustmentId" type="int">
+            <column name="adjustment_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="inventoryId" type="java.lang.Integer">
+            <column name="inventory_id" />
+        </property>
+        <property name="productId" type="java.lang.Integer">
+            <column name="product_id" />
+        </property>
+        <property name="quantityOld" type="java.lang.Double">
+            <column name="quantity_old" precision="17" scale="17" />
+        </property>
+        <property name="quantityNew" type="java.lang.Double">
+            <column name="quantity_new" precision="17" scale="17" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="13" />
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" />
+        </property>
+        <property name="userName" type="string">
+            <column name="user_name" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2013 1:55:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class name="prototype.hibernate.datamodel.entities.vender.OrderVendor" schema="public" table="order_vendor">
+    <id name="orderVendorId" type="int">
+      <column name="order_vendor_id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="orderVendorName" type="string">
+      <column length="100" name="order_vendor_name"/>
+    </property>
+    <property name="status" type="string">
+      <column length="20" name="status"/>
+    </property>
+    <property name="orderDate" type="date">
+      <column length="13" name="order_date"/>
+    </property>
+    <property name="comment" type="string">
+      <column name="comment"/>
+    </property>
+    <property name="userName" type="string">
+      <column length="20" name="user_name"/>
+    </property>
+    <property name="userRequest" type="string">
+      <column length="20" name="user_request"/>
+    </property>
+  </class>
+</hibernate-mapping>

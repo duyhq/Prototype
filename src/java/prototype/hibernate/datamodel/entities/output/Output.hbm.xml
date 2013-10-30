@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2013 1:55:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class name="prototype.hibernate.datamodel.entities.output.Output" schema="public" table="output">
+    <id name="outputId" type="int">
+      <column name="output_id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="outputName" type="string">
+      <column length="100" name="output_name"/>
+    </property>
+    <property name="dateOutput" type="date">
+      <column length="13" name="date_output"/>
+    </property>
+    <property name="totalMoney" type="java.lang.Double">
+      <column name="total_money" precision="17" scale="17"/>
+    </property>
+    <property name="userName" type="string">
+      <column length="20" name="user_name"/>
+    </property>
+    <property name="comment" type="string">
+      <column name="comment"/>
+    </property>
+    <property name="fromInventoryId" type="java.lang.Integer">
+      <column name="from_inventory_id"/>
+    </property>
+    <property name="fromInventoryName" type="string">
+      <column length="50" name="from_inventory_name"/>
+    </property>
+    <property name="toInventoryId" type="java.lang.Integer">
+      <column name="to_inventory_id"/>
+    </property>
+    <property name="toInventoryName" type="string">
+      <column length="50" name="to_inventory_name"/>
+    </property>
+    <property name="userRequest" type="string">
+      <column length="50" name="user_request"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2013 1:55:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class name="prototype.hibernate.datamodel.entities.vender.Vendor" schema="public" table="vendor">
+    <id name="vendorId" type="int">
+      <column name="vendor_id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="vendorName" type="string">
+      <column length="50" name="vendor_name"/>
+    </property>
+    <property name="vendorAddress" type="string">
+      <column name="vendor_address"/>
+    </property>
+    <property name="vendorPhone" type="string">
+      <column length="20" name="vendor_phone"/>
+    </property>
+  </class>
+</hibernate-mapping>

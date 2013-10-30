@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/prototype</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">postgres</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="prototype/hibernate/datamodel/entities/unit/Unit.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/inventory/InventoryAdjustment.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/vender/OrderVendorDetail.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/inventory/InventoryDetail.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/input/Input.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/output/OutputDetail.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/output/Output.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/product/Product.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/vender/OrderVendor.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/inventory/Inventory.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/input/InputDetail.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/vender/Vendor.hbm.xml"/>
+    <mapping resource="prototype/hibernate/datamodel/entities/vender/VendorDetail.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

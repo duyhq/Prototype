@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2013 1:55:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class name="prototype.hibernate.datamodel.entities.inventory.InventoryDetail" schema="public" table="inventory_detail">
+    <id name="inventoryDetailId" type="int">
+      <column name="inventory_detail_id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="inventoryId" type="java.lang.Integer">
+      <column name="inventory_id"/>
+    </property>
+    <property name="productId" type="java.lang.Integer">
+      <column name="product_id"/>
+    </property>
+    <property name="quantity" type="java.lang.Double">
+      <column name="quantity" precision="17" scale="17"/>
+    </property>
+    <property name="unitId" type="java.lang.Integer">
+      <column name="unit_id"/>
+    </property>
+  </class>
+</hibernate-mapping>

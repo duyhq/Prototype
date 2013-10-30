@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 30, 2013 1:55:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class name="prototype.hibernate.datamodel.entities.input.InputDetail" schema="public" table="input_detail">
+    <id name="inputDetailId" type="int">
+      <column name="input_detail_id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="inputId" type="java.lang.Integer">
+      <column name="input_id"/>
+    </property>
+    <property name="productId" type="java.lang.Integer">
+      <column name="product_id"/>
+    </property>
+    <property name="productName" type="string">
+      <column length="50" name="product_name"/>
+    </property>
+    <property name="price" type="java.lang.Double">
+      <column name="price" precision="17" scale="17"/>
+    </property>
+    <property name="quantity" type="java.lang.Double">
+      <column name="quantity" precision="17" scale="17"/>
+    </property>
+    <property name="unitId" type="java.lang.Integer">
+      <column name="unit_id"/>
+    </property>
+    <property name="inventoryId" type="java.lang.Integer">
+      <column name="inventory_id"/>
+    </property>
+    <property name="totalMoney" type="java.lang.Double">
+      <column name="total_money" precision="17" scale="17"/>
+    </property>
+    <property name="vendorId" type="java.lang.Integer">
+      <column name="vendor_id"/>
+    </property>
+    <property name="vendorName" type="string">
+      <column length="50" name="vendor_name"/>
+    </property>
+  </class>
+</hibernate-mapping>
